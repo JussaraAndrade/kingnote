@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+	<title>Caderno de Anotações</title>
+	
+	<!-- Bootstrap  CSS-->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Customização de fonte-->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Customização de estilo-->
+	<link href="css/sb-admin.css" rel="stylesheet">
+  
+	<!-- Customização scripts página-->
+    <script src="js/sb-admin.min.js"></script>
+	
+	<!-- Bootstrap JavaScript-->
+    <script src="jquery/jquery.min.js"></script> 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  
+	</head>
+
+	<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+  <!-- Navegação-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="lembretes.html">King Note</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+	  
+	  
+	  <div class="container-fluid">
+            <form action="CadastroEventoServlet">
+                <div class="row">
+                    <div class="col-sm-3 col-md-2 sidebar">
+                        <ul class="nav nav-sidebar">
+          
+					<a href="#">Nova</a></br>
+				</li>
+			</ul>
+			
+		
+			<!-- Formulario para filtrar -->
+		
+			<form  method="get" id="searchform" action="/search/">
+		
+			<div id="filtrar1">
+		
+				<p class="parf"> Filtrar </p>
+		
+			<div class="barraum">
+				<input type="text" placeholder="Titulo" name="q" id="s" onfocus="defaultInput(this)" onblur="clearInput(this)" /></br></br>
+			</div>
+		
+			<div>
+				<input type="text" placeholder="Texto" name="q" id="s" onfocus="defaultInput(this)" onblur="clearInput(this)" /></br></br>
+			</div>	
+		
+			<div>	
+				<input type="text" placeholder="Categoria" name="q" id="s" onfocus="defaultInput(this)" onblur="clearInput(this)" /></br></br>
+			</div>	
+		
+			<div>
+				<p class="parf"> Cor </p>
+			
+				<select name="Prioridade">
+		
+					<option value="bota">Vermelho</option>
+					<option value="fla">Amarelo</option>
+					<option value="flu">Azul</option></br>
+				</select></br></br>
+			</div>	
+		
+		<div>
+			<button type="submit" id="searchsubmit" value=" "> Pesquisar </button>
+		</div>
+		
+      </ul>
+    </div>
+  </nav>
+  
+
+  <div class="content-wrapper">
+    <div class="container-fluid">
+	 
+          
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+        
+        </div>
+      </div>
+    </footer>
+
+    
+  </div>
+</body>
+
+</html>
